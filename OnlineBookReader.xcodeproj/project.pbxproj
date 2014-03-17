@@ -1,0 +1,765 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		729B63B918CDA1EA00395997 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 729B63B818CDA1EA00395997 /* Foundation.framework */; };
+		729B63BB18CDA1EA00395997 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 729B63BA18CDA1EA00395997 /* CoreGraphics.framework */; };
+		729B63BD18CDA1EA00395997 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 729B63BC18CDA1EA00395997 /* UIKit.framework */; };
+		729B63C318CDA1EA00395997 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 729B63C118CDA1EA00395997 /* InfoPlist.strings */; };
+		729B63C518CDA1EA00395997 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 729B63C418CDA1EA00395997 /* main.m */; };
+		729B63C918CDA1EA00395997 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 729B63C818CDA1EA00395997 /* AppDelegate.m */; };
+		729B63CC18CDA1EA00395997 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 729B63CA18CDA1EA00395997 /* Main_iPhone.storyboard */; };
+		729B63CF18CDA1EA00395997 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 729B63CD18CDA1EA00395997 /* Main_iPad.storyboard */; };
+		729B63D218CDA1EA00395997 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 729B63D118CDA1EA00395997 /* MasterViewController.m */; };
+		729B63D518CDA1EA00395997 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 729B63D418CDA1EA00395997 /* DetailViewController.m */; };
+		729B63D718CDA1EA00395997 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 729B63D618CDA1EA00395997 /* Images.xcassets */; };
+		729B63DE18CDA1EA00395997 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 729B63DD18CDA1EA00395997 /* XCTest.framework */; };
+		729B63DF18CDA1EA00395997 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 729B63B818CDA1EA00395997 /* Foundation.framework */; };
+		729B63E018CDA1EA00395997 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 729B63BC18CDA1EA00395997 /* UIKit.framework */; };
+		729B63E818CDA1EA00395997 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 729B63E618CDA1EA00395997 /* InfoPlist.strings */; };
+		729B63EA18CDA1EA00395997 /* OnlineBookReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 729B63E918CDA1EA00395997 /* OnlineBookReaderTests.m */; };
+		729B63F518CDA45400395997 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 729B63F418CDA45400395997 /* SearchViewController.m */; };
+		729B63FB18CDA7BB00395997 /* BaseSearchEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 729B63FA18CDA7BB00395997 /* BaseSearchEngine.m */; };
+		729B640118CDAADE00395997 /* BaseBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 729B640018CDAADE00395997 /* BaseBook.m */; };
+		729B640418CDAB4900395997 /* HjwzwSearchEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 729B640318CDAB4900395997 /* HjwzwSearchEngine.m */; };
+		729B642018CDB1C600395997 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 729B640818CDB1C600395997 /* AFHTTPRequestOperation.m */; };
+		729B642118CDB1C600395997 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 729B640A18CDB1C600395997 /* AFHTTPRequestOperationManager.m */; };
+		729B642218CDB1C600395997 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 729B640C18CDB1C600395997 /* AFHTTPSessionManager.m */; };
+		729B642318CDB1C600395997 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 729B640F18CDB1C600395997 /* AFNetworkReachabilityManager.m */; };
+		729B642418CDB1C600395997 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 729B641118CDB1C600395997 /* AFSecurityPolicy.m */; };
+		729B642518CDB1C600395997 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 729B641318CDB1C600395997 /* AFURLConnectionOperation.m */; };
+		729B642618CDB1C600395997 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 729B641518CDB1C600395997 /* AFURLRequestSerialization.m */; };
+		729B642718CDB1C600395997 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 729B641718CDB1C600395997 /* AFURLResponseSerialization.m */; };
+		729B642818CDB1C600395997 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 729B641918CDB1C600395997 /* AFURLSessionManager.m */; };
+		729B642918CDB1C600395997 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 729B641C18CDB1C600395997 /* HTMLNode.m */; };
+		729B642A18CDB1C600395997 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 729B641E18CDB1C600395997 /* HTMLParser.m */; };
+		729B642B18CDB1C600395997 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 729B641F18CDB1C600395997 /* README.md */; };
+		729B642D18CDB30000395997 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 729B642C18CDB30000395997 /* libxml2.dylib */; };
+		729B643018CDB6CF00395997 /* CustomHTMLDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 729B642F18CDB6CF00395997 /* CustomHTMLDownloader.m */; };
+		729B644F18CDBFAC00395997 /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 729B643418CDBFAC00395997 /* CXMLDocument_CreationExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		729B645018CDBFAC00395997 /* CXMLNode_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 729B643618CDBFAC00395997 /* CXMLNode_CreationExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		729B645118CDBFAC00395997 /* CXHTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 729B643818CDBFAC00395997 /* CXHTMLDocument.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		729B645218CDBFAC00395997 /* CXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 729B643A18CDBFAC00395997 /* CXMLDocument.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		729B645318CDBFAC00395997 /* CXMLDocument_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 729B643C18CDBFAC00395997 /* CXMLDocument_PrivateExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		729B645418CDBFAC00395997 /* CXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 729B643E18CDBFAC00395997 /* CXMLElement.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		729B645518CDBFAC00395997 /* CXMLElement_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 729B644018CDBFAC00395997 /* CXMLElement_CreationExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		729B645618CDBFAC00395997 /* CXMLElement_ElementTreeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 729B644218CDBFAC00395997 /* CXMLElement_ElementTreeExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		729B645718CDBFAC00395997 /* CXMLNamespaceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 729B644418CDBFAC00395997 /* CXMLNamespaceNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		729B645818CDBFAC00395997 /* CXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 729B644618CDBFAC00395997 /* CXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		729B645918CDBFAC00395997 /* CXMLNode_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 729B644818CDBFAC00395997 /* CXMLNode_PrivateExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		729B645A18CDBFAC00395997 /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 729B644A18CDBFAC00395997 /* CXMLNode_XPathExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		729B645B18CDBFAC00395997 /* CTidy.m in Sources */ = {isa = PBXBuildFile; fileRef = 729B644D18CDBFAC00395997 /* CTidy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		729B63E118CDA1EA00395997 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 729B63AD18CDA1EA00395997 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 729B63B418CDA1EA00395997;
+			remoteInfo = OnlineBookReader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		729B63B518CDA1EA00395997 /* OnlineBookReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineBookReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		729B63B818CDA1EA00395997 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		729B63BA18CDA1EA00395997 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		729B63BC18CDA1EA00395997 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		729B63C018CDA1EA00395997 /* OnlineBookReader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OnlineBookReader-Info.plist"; sourceTree = "<group>"; };
+		729B63C218CDA1EA00395997 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		729B63C418CDA1EA00395997 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		729B63C618CDA1EA00395997 /* OnlineBookReader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OnlineBookReader-Prefix.pch"; sourceTree = "<group>"; };
+		729B63C718CDA1EA00395997 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		729B63C818CDA1EA00395997 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		729B63CB18CDA1EA00395997 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		729B63CE18CDA1EA00395997 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		729B63D018CDA1EA00395997 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		729B63D118CDA1EA00395997 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		729B63D318CDA1EA00395997 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		729B63D418CDA1EA00395997 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		729B63D618CDA1EA00395997 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		729B63DC18CDA1EA00395997 /* OnlineBookReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlineBookReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		729B63DD18CDA1EA00395997 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		729B63E518CDA1EA00395997 /* OnlineBookReaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OnlineBookReaderTests-Info.plist"; sourceTree = "<group>"; };
+		729B63E718CDA1EA00395997 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		729B63E918CDA1EA00395997 /* OnlineBookReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnlineBookReaderTests.m; sourceTree = "<group>"; };
+		729B63F318CDA45400395997 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		729B63F418CDA45400395997 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		729B63F918CDA7BB00395997 /* BaseSearchEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSearchEngine.h; sourceTree = "<group>"; };
+		729B63FA18CDA7BB00395997 /* BaseSearchEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSearchEngine.m; sourceTree = "<group>"; };
+		729B63FF18CDAADE00395997 /* BaseBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseBook.h; sourceTree = "<group>"; };
+		729B640018CDAADE00395997 /* BaseBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseBook.m; sourceTree = "<group>"; };
+		729B640218CDAB4900395997 /* HjwzwSearchEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HjwzwSearchEngine.h; sourceTree = "<group>"; };
+		729B640318CDAB4900395997 /* HjwzwSearchEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HjwzwSearchEngine.m; sourceTree = "<group>"; };
+		729B640718CDB1C600395997 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		729B640818CDB1C600395997 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		729B640918CDB1C600395997 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		729B640A18CDB1C600395997 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		729B640B18CDB1C600395997 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		729B640C18CDB1C600395997 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		729B640D18CDB1C600395997 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		729B640E18CDB1C600395997 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		729B640F18CDB1C600395997 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		729B641018CDB1C600395997 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		729B641118CDB1C600395997 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		729B641218CDB1C600395997 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		729B641318CDB1C600395997 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		729B641418CDB1C600395997 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		729B641518CDB1C600395997 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		729B641618CDB1C600395997 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		729B641718CDB1C600395997 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		729B641818CDB1C600395997 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		729B641918CDB1C600395997 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		729B641B18CDB1C600395997 /* HTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLNode.h; sourceTree = "<group>"; };
+		729B641C18CDB1C600395997 /* HTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLNode.m; sourceTree = "<group>"; };
+		729B641D18CDB1C600395997 /* HTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLParser.h; sourceTree = "<group>"; };
+		729B641E18CDB1C600395997 /* HTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLParser.m; sourceTree = "<group>"; };
+		729B641F18CDB1C600395997 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		729B642C18CDB30000395997 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		729B642E18CDB6CF00395997 /* CustomHTMLDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomHTMLDownloader.h; sourceTree = "<group>"; };
+		729B642F18CDB6CF00395997 /* CustomHTMLDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomHTMLDownloader.m; sourceTree = "<group>"; };
+		729B643318CDBFAC00395997 /* CXMLDocument_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_CreationExtensions.h; sourceTree = "<group>"; };
+		729B643418CDBFAC00395997 /* CXMLDocument_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_CreationExtensions.m; sourceTree = "<group>"; };
+		729B643518CDBFAC00395997 /* CXMLNode_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_CreationExtensions.h; sourceTree = "<group>"; };
+		729B643618CDBFAC00395997 /* CXMLNode_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_CreationExtensions.m; sourceTree = "<group>"; };
+		729B643718CDBFAC00395997 /* CXHTMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXHTMLDocument.h; sourceTree = "<group>"; };
+		729B643818CDBFAC00395997 /* CXHTMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXHTMLDocument.m; sourceTree = "<group>"; };
+		729B643918CDBFAC00395997 /* CXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument.h; sourceTree = "<group>"; };
+		729B643A18CDBFAC00395997 /* CXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument.m; sourceTree = "<group>"; };
+		729B643B18CDBFAC00395997 /* CXMLDocument_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_PrivateExtensions.h; sourceTree = "<group>"; };
+		729B643C18CDBFAC00395997 /* CXMLDocument_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_PrivateExtensions.m; sourceTree = "<group>"; };
+		729B643D18CDBFAC00395997 /* CXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement.h; sourceTree = "<group>"; };
+		729B643E18CDBFAC00395997 /* CXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement.m; sourceTree = "<group>"; };
+		729B643F18CDBFAC00395997 /* CXMLElement_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement_CreationExtensions.h; sourceTree = "<group>"; };
+		729B644018CDBFAC00395997 /* CXMLElement_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement_CreationExtensions.m; sourceTree = "<group>"; };
+		729B644118CDBFAC00395997 /* CXMLElement_ElementTreeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement_ElementTreeExtensions.h; sourceTree = "<group>"; };
+		729B644218CDBFAC00395997 /* CXMLElement_ElementTreeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement_ElementTreeExtensions.m; sourceTree = "<group>"; };
+		729B644318CDBFAC00395997 /* CXMLNamespaceNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNamespaceNode.h; sourceTree = "<group>"; };
+		729B644418CDBFAC00395997 /* CXMLNamespaceNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNamespaceNode.m; sourceTree = "<group>"; };
+		729B644518CDBFAC00395997 /* CXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode.h; sourceTree = "<group>"; };
+		729B644618CDBFAC00395997 /* CXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode.m; sourceTree = "<group>"; };
+		729B644718CDBFAC00395997 /* CXMLNode_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_PrivateExtensions.h; sourceTree = "<group>"; };
+		729B644818CDBFAC00395997 /* CXMLNode_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_PrivateExtensions.m; sourceTree = "<group>"; };
+		729B644918CDBFAC00395997 /* CXMLNode_XPathExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_XPathExtensions.h; sourceTree = "<group>"; };
+		729B644A18CDBFAC00395997 /* CXMLNode_XPathExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_XPathExtensions.m; sourceTree = "<group>"; };
+		729B644C18CDBFAC00395997 /* CTidy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTidy.h; sourceTree = "<group>"; };
+		729B644D18CDBFAC00395997 /* CTidy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTidy.m; sourceTree = "<group>"; };
+		729B644E18CDBFAC00395997 /* TouchXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchXML.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		729B63B218CDA1EA00395997 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				729B642D18CDB30000395997 /* libxml2.dylib in Frameworks */,
+				729B63BB18CDA1EA00395997 /* CoreGraphics.framework in Frameworks */,
+				729B63BD18CDA1EA00395997 /* UIKit.framework in Frameworks */,
+				729B63B918CDA1EA00395997 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		729B63D918CDA1EA00395997 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				729B63DE18CDA1EA00395997 /* XCTest.framework in Frameworks */,
+				729B63E018CDA1EA00395997 /* UIKit.framework in Frameworks */,
+				729B63DF18CDA1EA00395997 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		729B63AC18CDA1EA00395997 = {
+			isa = PBXGroup;
+			children = (
+				729B63BE18CDA1EA00395997 /* OnlineBookReader */,
+				729B63E318CDA1EA00395997 /* OnlineBookReaderTests */,
+				729B63B718CDA1EA00395997 /* Frameworks */,
+				729B63B618CDA1EA00395997 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		729B63B618CDA1EA00395997 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				729B63B518CDA1EA00395997 /* OnlineBookReader.app */,
+				729B63DC18CDA1EA00395997 /* OnlineBookReaderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		729B63B718CDA1EA00395997 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				729B642C18CDB30000395997 /* libxml2.dylib */,
+				729B63B818CDA1EA00395997 /* Foundation.framework */,
+				729B63BA18CDA1EA00395997 /* CoreGraphics.framework */,
+				729B63BC18CDA1EA00395997 /* UIKit.framework */,
+				729B63DD18CDA1EA00395997 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		729B63BE18CDA1EA00395997 /* OnlineBookReader */ = {
+			isa = PBXGroup;
+			children = (
+				729B640518CDB1C600395997 /* Libraries */,
+				729B63F618CDA78600395997 /* SearchEngines */,
+				729B63C718CDA1EA00395997 /* AppDelegate.h */,
+				729B63C818CDA1EA00395997 /* AppDelegate.m */,
+				729B63CA18CDA1EA00395997 /* Main_iPhone.storyboard */,
+				729B63CD18CDA1EA00395997 /* Main_iPad.storyboard */,
+				729B63D018CDA1EA00395997 /* MasterViewController.h */,
+				729B63D118CDA1EA00395997 /* MasterViewController.m */,
+				729B63D318CDA1EA00395997 /* DetailViewController.h */,
+				729B63D418CDA1EA00395997 /* DetailViewController.m */,
+				729B63D618CDA1EA00395997 /* Images.xcassets */,
+				729B63BF18CDA1EA00395997 /* Supporting Files */,
+				729B63F318CDA45400395997 /* SearchViewController.h */,
+				729B63F418CDA45400395997 /* SearchViewController.m */,
+			);
+			path = OnlineBookReader;
+			sourceTree = "<group>";
+		};
+		729B63BF18CDA1EA00395997 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				729B63C018CDA1EA00395997 /* OnlineBookReader-Info.plist */,
+				729B63C118CDA1EA00395997 /* InfoPlist.strings */,
+				729B63C418CDA1EA00395997 /* main.m */,
+				729B63C618CDA1EA00395997 /* OnlineBookReader-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		729B63E318CDA1EA00395997 /* OnlineBookReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				729B63E918CDA1EA00395997 /* OnlineBookReaderTests.m */,
+				729B63E418CDA1EA00395997 /* Supporting Files */,
+			);
+			path = OnlineBookReaderTests;
+			sourceTree = "<group>";
+		};
+		729B63E418CDA1EA00395997 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				729B63E518CDA1EA00395997 /* OnlineBookReaderTests-Info.plist */,
+				729B63E618CDA1EA00395997 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		729B63F618CDA78600395997 /* SearchEngines */ = {
+			isa = PBXGroup;
+			children = (
+				729B63F818CDA7A400395997 /* base */,
+				729B63F718CDA78600395997 /* hjwzw */,
+			);
+			path = SearchEngines;
+			sourceTree = "<group>";
+		};
+		729B63F718CDA78600395997 /* hjwzw */ = {
+			isa = PBXGroup;
+			children = (
+				729B640218CDAB4900395997 /* HjwzwSearchEngine.h */,
+				729B640318CDAB4900395997 /* HjwzwSearchEngine.m */,
+			);
+			path = hjwzw;
+			sourceTree = "<group>";
+		};
+		729B63F818CDA7A400395997 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				729B63F918CDA7BB00395997 /* BaseSearchEngine.h */,
+				729B63FA18CDA7BB00395997 /* BaseSearchEngine.m */,
+				729B63FF18CDAADE00395997 /* BaseBook.h */,
+				729B640018CDAADE00395997 /* BaseBook.m */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		729B640518CDB1C600395997 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				729B643118CDBFAC00395997 /* TouchXML */,
+				729B640618CDB1C600395997 /* AFNetworking */,
+				729B641A18CDB1C600395997 /* HTMLParser */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		729B640618CDB1C600395997 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				729B640718CDB1C600395997 /* AFHTTPRequestOperation.h */,
+				729B640818CDB1C600395997 /* AFHTTPRequestOperation.m */,
+				729B640918CDB1C600395997 /* AFHTTPRequestOperationManager.h */,
+				729B640A18CDB1C600395997 /* AFHTTPRequestOperationManager.m */,
+				729B640B18CDB1C600395997 /* AFHTTPSessionManager.h */,
+				729B640C18CDB1C600395997 /* AFHTTPSessionManager.m */,
+				729B640D18CDB1C600395997 /* AFNetworking.h */,
+				729B640E18CDB1C600395997 /* AFNetworkReachabilityManager.h */,
+				729B640F18CDB1C600395997 /* AFNetworkReachabilityManager.m */,
+				729B641018CDB1C600395997 /* AFSecurityPolicy.h */,
+				729B641118CDB1C600395997 /* AFSecurityPolicy.m */,
+				729B641218CDB1C600395997 /* AFURLConnectionOperation.h */,
+				729B641318CDB1C600395997 /* AFURLConnectionOperation.m */,
+				729B641418CDB1C600395997 /* AFURLRequestSerialization.h */,
+				729B641518CDB1C600395997 /* AFURLRequestSerialization.m */,
+				729B641618CDB1C600395997 /* AFURLResponseSerialization.h */,
+				729B641718CDB1C600395997 /* AFURLResponseSerialization.m */,
+				729B641818CDB1C600395997 /* AFURLSessionManager.h */,
+				729B641918CDB1C600395997 /* AFURLSessionManager.m */,
+				729B642E18CDB6CF00395997 /* CustomHTMLDownloader.h */,
+				729B642F18CDB6CF00395997 /* CustomHTMLDownloader.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		729B641A18CDB1C600395997 /* HTMLParser */ = {
+			isa = PBXGroup;
+			children = (
+				729B641B18CDB1C600395997 /* HTMLNode.h */,
+				729B641C18CDB1C600395997 /* HTMLNode.m */,
+				729B641D18CDB1C600395997 /* HTMLParser.h */,
+				729B641E18CDB1C600395997 /* HTMLParser.m */,
+				729B641F18CDB1C600395997 /* README.md */,
+			);
+			path = HTMLParser;
+			sourceTree = "<group>";
+		};
+		729B643118CDBFAC00395997 /* TouchXML */ = {
+			isa = PBXGroup;
+			children = (
+				729B643218CDBFAC00395997 /* Creation */,
+				729B643718CDBFAC00395997 /* CXHTMLDocument.h */,
+				729B643818CDBFAC00395997 /* CXHTMLDocument.m */,
+				729B643918CDBFAC00395997 /* CXMLDocument.h */,
+				729B643A18CDBFAC00395997 /* CXMLDocument.m */,
+				729B643B18CDBFAC00395997 /* CXMLDocument_PrivateExtensions.h */,
+				729B643C18CDBFAC00395997 /* CXMLDocument_PrivateExtensions.m */,
+				729B643D18CDBFAC00395997 /* CXMLElement.h */,
+				729B643E18CDBFAC00395997 /* CXMLElement.m */,
+				729B643F18CDBFAC00395997 /* CXMLElement_CreationExtensions.h */,
+				729B644018CDBFAC00395997 /* CXMLElement_CreationExtensions.m */,
+				729B644118CDBFAC00395997 /* CXMLElement_ElementTreeExtensions.h */,
+				729B644218CDBFAC00395997 /* CXMLElement_ElementTreeExtensions.m */,
+				729B644318CDBFAC00395997 /* CXMLNamespaceNode.h */,
+				729B644418CDBFAC00395997 /* CXMLNamespaceNode.m */,
+				729B644518CDBFAC00395997 /* CXMLNode.h */,
+				729B644618CDBFAC00395997 /* CXMLNode.m */,
+				729B644718CDBFAC00395997 /* CXMLNode_PrivateExtensions.h */,
+				729B644818CDBFAC00395997 /* CXMLNode_PrivateExtensions.m */,
+				729B644918CDBFAC00395997 /* CXMLNode_XPathExtensions.h */,
+				729B644A18CDBFAC00395997 /* CXMLNode_XPathExtensions.m */,
+				729B644B18CDBFAC00395997 /* Tidy */,
+				729B644E18CDBFAC00395997 /* TouchXML.h */,
+			);
+			path = TouchXML;
+			sourceTree = "<group>";
+		};
+		729B643218CDBFAC00395997 /* Creation */ = {
+			isa = PBXGroup;
+			children = (
+				729B643318CDBFAC00395997 /* CXMLDocument_CreationExtensions.h */,
+				729B643418CDBFAC00395997 /* CXMLDocument_CreationExtensions.m */,
+				729B643518CDBFAC00395997 /* CXMLNode_CreationExtensions.h */,
+				729B643618CDBFAC00395997 /* CXMLNode_CreationExtensions.m */,
+			);
+			path = Creation;
+			sourceTree = "<group>";
+		};
+		729B644B18CDBFAC00395997 /* Tidy */ = {
+			isa = PBXGroup;
+			children = (
+				729B644C18CDBFAC00395997 /* CTidy.h */,
+				729B644D18CDBFAC00395997 /* CTidy.m */,
+			);
+			path = Tidy;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		729B63B418CDA1EA00395997 /* OnlineBookReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 729B63ED18CDA1EA00395997 /* Build configuration list for PBXNativeTarget "OnlineBookReader" */;
+			buildPhases = (
+				729B63B118CDA1EA00395997 /* Sources */,
+				729B63B218CDA1EA00395997 /* Frameworks */,
+				729B63B318CDA1EA00395997 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OnlineBookReader;
+			productName = OnlineBookReader;
+			productReference = 729B63B518CDA1EA00395997 /* OnlineBookReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		729B63DB18CDA1EA00395997 /* OnlineBookReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 729B63F018CDA1EA00395997 /* Build configuration list for PBXNativeTarget "OnlineBookReaderTests" */;
+			buildPhases = (
+				729B63D818CDA1EA00395997 /* Sources */,
+				729B63D918CDA1EA00395997 /* Frameworks */,
+				729B63DA18CDA1EA00395997 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				729B63E218CDA1EA00395997 /* PBXTargetDependency */,
+			);
+			name = OnlineBookReaderTests;
+			productName = OnlineBookReaderTests;
+			productReference = 729B63DC18CDA1EA00395997 /* OnlineBookReaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		729B63AD18CDA1EA00395997 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Rebalance;
+				TargetAttributes = {
+					729B63DB18CDA1EA00395997 = {
+						TestTargetID = 729B63B418CDA1EA00395997;
+					};
+				};
+			};
+			buildConfigurationList = 729B63B018CDA1EA00395997 /* Build configuration list for PBXProject "OnlineBookReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 729B63AC18CDA1EA00395997;
+			productRefGroup = 729B63B618CDA1EA00395997 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				729B63B418CDA1EA00395997 /* OnlineBookReader */,
+				729B63DB18CDA1EA00395997 /* OnlineBookReaderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		729B63B318CDA1EA00395997 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				729B63CF18CDA1EA00395997 /* Main_iPad.storyboard in Resources */,
+				729B63D718CDA1EA00395997 /* Images.xcassets in Resources */,
+				729B642B18CDB1C600395997 /* README.md in Resources */,
+				729B63CC18CDA1EA00395997 /* Main_iPhone.storyboard in Resources */,
+				729B63C318CDA1EA00395997 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		729B63DA18CDA1EA00395997 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				729B63E818CDA1EA00395997 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		729B63B118CDA1EA00395997 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				729B643018CDB6CF00395997 /* CustomHTMLDownloader.m in Sources */,
+				729B642818CDB1C600395997 /* AFURLSessionManager.m in Sources */,
+				729B645718CDBFAC00395997 /* CXMLNamespaceNode.m in Sources */,
+				729B645A18CDBFAC00395997 /* CXMLNode_XPathExtensions.m in Sources */,
+				729B642518CDB1C600395997 /* AFURLConnectionOperation.m in Sources */,
+				729B642018CDB1C600395997 /* AFHTTPRequestOperation.m in Sources */,
+				729B63C918CDA1EA00395997 /* AppDelegate.m in Sources */,
+				729B642118CDB1C600395997 /* AFHTTPRequestOperationManager.m in Sources */,
+				729B63D218CDA1EA00395997 /* MasterViewController.m in Sources */,
+				729B644F18CDBFAC00395997 /* CXMLDocument_CreationExtensions.m in Sources */,
+				729B642A18CDB1C600395997 /* HTMLParser.m in Sources */,
+				729B63FB18CDA7BB00395997 /* BaseSearchEngine.m in Sources */,
+				729B645818CDBFAC00395997 /* CXMLNode.m in Sources */,
+				729B645318CDBFAC00395997 /* CXMLDocument_PrivateExtensions.m in Sources */,
+				729B642218CDB1C600395997 /* AFHTTPSessionManager.m in Sources */,
+				729B63F518CDA45400395997 /* SearchViewController.m in Sources */,
+				729B640418CDAB4900395997 /* HjwzwSearchEngine.m in Sources */,
+				729B63C518CDA1EA00395997 /* main.m in Sources */,
+				729B642418CDB1C600395997 /* AFSecurityPolicy.m in Sources */,
+				729B63D518CDA1EA00395997 /* DetailViewController.m in Sources */,
+				729B645118CDBFAC00395997 /* CXHTMLDocument.m in Sources */,
+				729B645B18CDBFAC00395997 /* CTidy.m in Sources */,
+				729B642618CDB1C600395997 /* AFURLRequestSerialization.m in Sources */,
+				729B642918CDB1C600395997 /* HTMLNode.m in Sources */,
+				729B645018CDBFAC00395997 /* CXMLNode_CreationExtensions.m in Sources */,
+				729B645918CDBFAC00395997 /* CXMLNode_PrivateExtensions.m in Sources */,
+				729B645218CDBFAC00395997 /* CXMLDocument.m in Sources */,
+				729B642318CDB1C600395997 /* AFNetworkReachabilityManager.m in Sources */,
+				729B642718CDB1C600395997 /* AFURLResponseSerialization.m in Sources */,
+				729B645518CDBFAC00395997 /* CXMLElement_CreationExtensions.m in Sources */,
+				729B645618CDBFAC00395997 /* CXMLElement_ElementTreeExtensions.m in Sources */,
+				729B645418CDBFAC00395997 /* CXMLElement.m in Sources */,
+				729B640118CDAADE00395997 /* BaseBook.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		729B63D818CDA1EA00395997 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				729B63EA18CDA1EA00395997 /* OnlineBookReaderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		729B63E218CDA1EA00395997 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 729B63B418CDA1EA00395997 /* OnlineBookReader */;
+			targetProxy = 729B63E118CDA1EA00395997 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		729B63C118CDA1EA00395997 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				729B63C218CDA1EA00395997 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		729B63CA18CDA1EA00395997 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				729B63CB18CDA1EA00395997 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		729B63CD18CDA1EA00395997 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				729B63CE18CDA1EA00395997 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		729B63E618CDA1EA00395997 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				729B63E718CDA1EA00395997 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		729B63EB18CDA1EA00395997 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		729B63EC18CDA1EA00395997 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		729B63EE18CDA1EA00395997 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OnlineBookReader/OnlineBookReader-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = "OnlineBookReader/OnlineBookReader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		729B63EF18CDA1EA00395997 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OnlineBookReader/OnlineBookReader-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = "OnlineBookReader/OnlineBookReader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		729B63F118CDA1EA00395997 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OnlineBookReader.app/OnlineBookReader";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OnlineBookReader/OnlineBookReader-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "OnlineBookReaderTests/OnlineBookReaderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		729B63F218CDA1EA00395997 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OnlineBookReader.app/OnlineBookReader";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OnlineBookReader/OnlineBookReader-Prefix.pch";
+				INFOPLIST_FILE = "OnlineBookReaderTests/OnlineBookReaderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		729B63B018CDA1EA00395997 /* Build configuration list for PBXProject "OnlineBookReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				729B63EB18CDA1EA00395997 /* Debug */,
+				729B63EC18CDA1EA00395997 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		729B63ED18CDA1EA00395997 /* Build configuration list for PBXNativeTarget "OnlineBookReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				729B63EE18CDA1EA00395997 /* Debug */,
+				729B63EF18CDA1EA00395997 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		729B63F018CDA1EA00395997 /* Build configuration list for PBXNativeTarget "OnlineBookReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				729B63F118CDA1EA00395997 /* Debug */,
+				729B63F218CDA1EA00395997 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 729B63AD18CDA1EA00395997 /* Project object */;
+}
